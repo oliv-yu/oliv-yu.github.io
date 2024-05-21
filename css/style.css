@@ -80,7 +80,7 @@
   background-color: rgb(60, 60, 60);
 }
 #projects .card .trim-image {
-  max-height: 200px;
+  max-height: 300px;
   max-width: 100%;
   overflow: hidden;
 }
