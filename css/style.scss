@@ -7,11 +7,16 @@
 	font-style: normal;
 }
 
+a.unstyled {
+	text-decoration: none;
+}
+
 .span-highlight {
 	color: rgb(236, 171, 92);
 
 	&:hover {
 		color: rgb(239, 205, 164);
+		transition: color 1s;
 	}
 }
 
@@ -30,6 +35,11 @@
 
 	.title {
 		font-size: 3rem;
+		animation: fadeIn 2s;
+	}
+
+	.subtitle {
+		animation: fadeIn 4s;
 	}
 }
 
@@ -126,4 +136,13 @@
 #footer {
 	background-color: rgb(35, 35, 35);
 	text-align: center;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
