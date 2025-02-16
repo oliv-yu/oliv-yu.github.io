@@ -7,10 +7,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className="bg-stone-900 text-stone-400 antialiased selection:bg-slate-300 selection:text-slate-950">
-        {children}
-      </body>
+    <html className="scroll-smooth" lang="en">
+      <body className="bg-zinc-900">{children}</body>
     </html>
   );
 }
