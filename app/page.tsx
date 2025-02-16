@@ -14,7 +14,7 @@ export default function Page() {
             <h1 className="text-4xl font-bold sm:text-5xl hover:text-blue-700 transition ease-in-and-out duration-600 transition-colors">
               Olivia Yu Wong
             </h1>
-            <h2 className="mt-3 text-lg font-medium sm:text-xl w-sm">
+            <h2 className="mt-3 text-lg font-medium sm:text-xl">
               I'm a <span className="text-blue-400">frontend developer</span>.
             </h2>
 
@@ -226,34 +226,34 @@ export default function Page() {
                               {description}
                             </p>
 
-                            <div className="mt-6 flex">
+                            <div className="mt-6 flex gap-x-2">
                               <a
                                 href={demoLink}
                                 rel="noreferrer noopener"
-                                className="rounded-xl border-2 border-slate-400 py-2 px-2 mr-3 text-xs hover:bg-slate-900 transition ease-in-and-out duration-600 transition-colors flex items-center gap-x-2"
+                                className="rounded-xl border-2 border-slate-400 py-2 px-2 hover:bg-slate-900 transition ease-in-and-out duration-600 transition-colors"
                                 target="_blank"
                               >
-                                <Icon
-                                  icon="laptop"
-                                  cssClass="inline fill-blue-50 h-6 w-9"
-                                />
-                                <div>
-                                  <span className="sm:ml-1">Live Demo</span>
+                                <div className="flex items-center text-xs gap-x-2">
+                                  <Icon
+                                    icon="laptop"
+                                    cssClass="inline fill-blue-50 h-6 w-9"
+                                  />
+                                  <span>Live Demo</span>
                                 </div>
                               </a>
 
                               <a
                                 href={repoLink}
                                 rel="noreferrer noopener"
-                                className="rounded-xl border-2 border-slate-400 py-2 px-2 mr-3 text-xs hover:bg-slate-900 transition ease-in-and-out duration-600 transition-colors flex items-center gap-x-2"
+                                className="rounded-xl border-2 border-slate-400 py-2 px-2 hover:bg-slate-900 transition ease-in-and-out duration-600 transition-colors"
                                 target="_blank"
                               >
-                                <Icon
-                                  icon="github"
-                                  cssClass="inline fill-blue-50 h-6 w-6"
-                                />
-                                <div>
-                                  <span className="sm:ml-1">Source Code</span>
+                                <div className="flex items-center text-xs gap-x-2">
+                                  <Icon
+                                    icon="github"
+                                    cssClass="inline fill-blue-50 h-6 w-6"
+                                  />
+                                  <span>Source Code</span>
                                 </div>
                               </a>
                             </div>
