@@ -21,7 +21,7 @@ export default function Page() {
             <nav className="nav hidden lg:block" aria-label="In-page links">
               <ul className="mt-16 w-max">
                 {[
-                  { name: "About Me", href: "#about" },
+                  { name: "About", href: "#about" },
                   { name: "Skills", href: "#skills" },
                   { name: "Projects", href: "#projects" },
                 ].map((item) => (
@@ -87,13 +87,13 @@ export default function Page() {
           <section
             id="about"
             className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24 tracking-wide"
-            aria-label="About me"
+            aria-label="About"
           >
             <h1 className="text-xs font-bold uppercase tracking-widest mb-3">
-              About Me
+              About
             </h1>
 
-            <div className="about-me-content">
+            <div className="about-content">
               <p className="mb-4">
                 I'm a developer based in Southern California. I originally
                 started at
