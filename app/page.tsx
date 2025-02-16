@@ -15,7 +15,8 @@ export default function Page() {
               Olivia Yu Wong
             </h1>
             <h2 className="mt-3 text-lg font-medium sm:text-xl">
-              I'm a <span className="text-blue-400">frontend developer</span>.
+              I&apos;m a{" "}
+              <span className="text-blue-400">frontend developer</span>.
             </h2>
 
             <nav className="nav hidden lg:block" aria-label="In-page links">
@@ -95,7 +96,7 @@ export default function Page() {
 
             <div className="about-content">
               <p className="mb-4">
-                I'm a developer based in Southern California. I originally
+                I&apos;m a developer based in Southern California. I originally
                 started at
                 <a className="ml-1 mr-1" href="https://www.liferay.com/">
                   <span className="text-blue-400 font-bold">Liferay</span>
@@ -149,7 +150,7 @@ export default function Page() {
                 "Playwright",
               ].map((item) => {
                 return (
-                  <p className="my-4">
+                  <p className="my-4" key={`skill-${item}`}>
                     <span className="rounded-3xl border-2 border-blue-400 py-2 px-3 mr-3 hover:bg-blue-900 transition ease-in-and-out duration-600 transition-colors">
                       {item}
                     </span>
