@@ -7,16 +7,16 @@ export default function Page() {
       <div className="lg:flex lg:justify-between lg:gap-4">
         <header className="tracking-wider lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[33%] lg:flex-col lg:justify-between lg:py-24">
           <div>
-            <div className="mb-4 text-xl font-medium">
-              <span className="after:content-['__\01F44B']">Hi!</span>
-              <span className="ml-2">My name is...</span>
+            <div className="mb-4 text-xl font-medium flex">
+              <div className="animate-wave after:content-['__\01F44B']"></div>
+              <div className="ml-2">Hi! My name is...</div>
             </div>
-            <h1 className="text-4xl font-bold sm:text-5xl hover:text-blue-700 transition ease-in-and-out duration-600 transition-colors">
+            <h1 className="text-4xl font-bold sm:text-5xl hover:text-blue-500 transition ease-in-and-out duration-300 transition-colors">
               Olivia Yu Wong
             </h1>
             <h2 className="mt-3 text-lg font-medium sm:text-xl">
               I&apos;m a{" "}
-              <span className="text-blue-400">frontend developer</span>.
+              <span className="animate-color-shift">frontend developer</span>.
             </h2>
 
             <nav className="nav hidden lg:block" aria-label="In-page links">
@@ -65,7 +65,7 @@ export default function Page() {
                 key={`link-${idx}-${item.name}`}
               >
                 <a
-                  className="block "
+                  className="block"
                   href={item.link}
                   target="_blank"
                   rel="noreferrer noopener"
@@ -76,7 +76,7 @@ export default function Page() {
 
                   <Icon
                     icon={item.icon}
-                    cssClass="fill-blue-50 h-6 w-6 hover:fill-blue-300 transition ease-in-and-out duration-600 transition-colors"
+                    cssClass="fill-blue-50 h-6 w-6 hover:fill-blue-500 transition ease-in-and-out duration-300 transition-colors"
                   />
                 </a>
               </li>
@@ -151,7 +151,7 @@ export default function Page() {
               ].map((item) => {
                 return (
                   <p className="my-4" key={`skill-${item}`}>
-                    <span className="rounded-3xl border-2 border-blue-400 py-2 px-3 mr-3 hover:bg-blue-900 transition ease-in-and-out duration-600 transition-colors">
+                    <span className="rounded-3xl border-2 border-blue-400 py-2 px-3 mr-3 hover:bg-blue-900 transition ease-in-and-out duration-300 transition-colors">
                       {item}
                     </span>
                   </p>
@@ -206,9 +206,12 @@ export default function Page() {
                   },
                 ].map(
                   ({ imagePath, title, description, demoLink, repoLink }) => (
-                    <li className="mb-12" key={title}>
-                      <div className="z-0 rounded-md transition motion-reduce:transition-none hover:bg-blue-950/45">
-                        <div className="group opacity-100 relative grid gap-4 pb-1 transition-all sm:grid-cols-6 sm:gap-8 md:gap-4">
+                    <li className="mb-2" key={title}>
+                      <div
+                        className="z-0 rounded-md transition motion-reduce:transition-none hover:bg-blue-950/45"
+                        style={{ margin: "0 -20px" }}
+                      >
+                        <div className="group opacity-100 relative grid gap-4 transition-all sm:grid-cols-6 sm:gap-8 md:gap-4 p-[20px]">
                           <div className="z-10 sm:col-span-2">
                             <img
                               className="aspect-3/2 object-cover rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30"
@@ -218,7 +221,7 @@ export default function Page() {
                           </div>
                           <div className="z-10 sm:col-span-4">
                             <h3>
-                              <span className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-blue-300 focus-visible:text-blue-300 sm:mt-2">
+                              <span className="inline-flex items-baseline font-medium leading-tight hover:text-blue-500 focus-visible:text-blue-500 transition ease-in-and-out duration-300 transition-colors">
                                 <span>{title}</span>
                               </span>
                             </h3>
@@ -231,7 +234,7 @@ export default function Page() {
                               <a
                                 href={demoLink}
                                 rel="noreferrer noopener"
-                                className="rounded-xl border-2 border-slate-400 py-2 px-2 hover:bg-slate-900 transition ease-in-and-out duration-600 transition-colors"
+                                className="rounded-xl border-2 border-blue-400 py-2 px-2 hover:bg-blue-900 transition ease-in-and-out duration-300 transition-colors"
                                 target="_blank"
                               >
                                 <div className="flex items-center text-xs gap-x-2">
@@ -246,7 +249,7 @@ export default function Page() {
                               <a
                                 href={repoLink}
                                 rel="noreferrer noopener"
-                                className="rounded-xl border-2 border-slate-400 py-2 px-2 hover:bg-slate-900 transition ease-in-and-out duration-600 transition-colors"
+                                className="rounded-xl border-2 border-blue-400 py-2 px-2 hover:bg-blue-900 transition ease-in-and-out duration-300 transition-colors"
                                 target="_blank"
                               >
                                 <div className="flex items-center text-xs gap-x-2">
@@ -267,6 +270,13 @@ export default function Page() {
               </ul>
             </div>
           </section>
+
+          <footer className="max-w-md pb-16 text-sm text-slate-500 sm:pb-0">
+            <p className="after:content-['__\01F643']">
+              Coded in Visual Studio Code, built with Next.js and Tailwind CSS,
+              deployed to GitHub Pages
+            </p>
+          </footer>
         </main>
       </div>
     </div>

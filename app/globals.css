@@ -1,1 +1,27 @@
 @import "tailwindcss";
+
+@theme {
+  --color-mint-500: oklch(0.72 0.11 178);
+  --animate-wave: wave 3s ease-in-out infinite;
+  --animate-color-shift: colorShift 6s ease-in-out infinite;
+
+  @keyframes wave {
+    0%,
+    100% {
+      transform: rotate(45deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+  }
+
+  @keyframes colorShift {
+    0%,
+    100% {
+      color: theme("colors.blue.500");
+    }
+    50% {
+      color: theme("colors.blue.100");
+    }
+  }
+}
