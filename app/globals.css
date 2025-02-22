@@ -4,6 +4,7 @@
   --color-mint-500: oklch(0.72 0.11 178);
   --animate-wave: wave 3s ease-in-out infinite;
   --animate-color-shift: colorShift 6s ease-in-out infinite;
+  --animate-opacity-shift: opacityShift 6s ease-in-out infinite;
 
   @keyframes wave {
     0%,
@@ -22,6 +23,16 @@
     }
     50% {
       color: theme("colors.blue.100");
+    }
+  }
+
+  @keyframes opacityShift {
+    0%,
+    100% {
+      opacity: 20%;
+    }
+    50% {
+      opacity: 100%;
     }
   }
 }
