@@ -7,7 +7,7 @@ export default function About() {
         I&apos;m a developer based in Southern California. I originally started
         at
         <a className="ml-1 mr-1" href="https://www.liferay.com/">
-          <span className="text-blue-400 font-bold">Liferay</span>
+          <span className="text-default-400 font-bold">Liferay</span>
         </a>
         as a QA engineer and later switched to frontend development. I love the
         creativity and problem solving that comes with the work, making sure

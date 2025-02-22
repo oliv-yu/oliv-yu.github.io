@@ -17,7 +17,7 @@ export default function Skills() {
       {SKILLS_LIST.map((item) => {
         return (
           <p className="my-4" key={`skill-${item}`}>
-            <span className="rounded-3xl border-2 border-blue-400 py-2 px-3 mr-3 hover:bg-blue-900 transition ease-in-and-out duration-300 transition-colors">
+            <span className="rounded-3xl border-2 border-default-400 py-2 px-3 mr-3 hover:bg-default-900 transition ease-in-and-out duration-300 transition-colors">
               {item}
             </span>
           </p>

@@ -39,7 +39,7 @@ export default function Footer() {
 
             <Icon
               icon={item.icon}
-              cssClass="fill-blue-50 h-6 w-6 hover:fill-blue-500 transition ease-in-and-out duration-300 transition-colors"
+              cssClass="fill-default-50 h-6 w-6 hover:fill-default-500 transition ease-in-and-out duration-300 transition-colors"
             />
           </a>
         </li>

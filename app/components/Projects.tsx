@@ -54,13 +54,13 @@ function Link({ type, href }) {
     <a
       href={href}
       rel="noreferrer noopener"
-      className="rounded-xl border-2 border-blue-400 py-2 px-2 hover:bg-blue-900 transition ease-in-and-out duration-300 transition-colors"
+      className="rounded-xl border-2 border-default-400 py-2 px-2 hover:bg-default-900 transition ease-in-and-out duration-300 transition-colors"
       target="_blank"
     >
       <div className="flex items-center text-xs gap-x-2">
         <Icon
           icon={linkData[type].icon}
-          cssClass={"inline fill-blue-50 " + linkData[type].dimensions}
+          cssClass={"inline fill-default-50 " + linkData[type].dimensions}
         />
         <span>{linkData[type].text}</span>
       </div>
@@ -76,7 +76,7 @@ export default function Projects() {
           ({ imagePath, title, description, demoLink, repoLink }) => (
             <li className="mb-2" key={title}>
               <div
-                className="z-0 rounded-md transition motion-reduce:transition-none hover:bg-blue-950/45"
+                className="z-0 rounded-md transition motion-reduce:transition-none hover:bg-default-950/45"
                 style={{ margin: "0 -20px" }}
               >
                 <div className="group opacity-100 relative grid gap-4 transition-all sm:grid-cols-6 sm:gap-8 md:gap-4 p-[20px]">
@@ -89,7 +89,7 @@ export default function Projects() {
                   </div>
                   <div className="z-10 sm:col-span-4">
                     <h3>
-                      <span className="inline-flex items-baseline font-medium leading-tight hover:text-blue-500 focus-visible:text-blue-500 transition ease-in-and-out duration-300 transition-colors">
+                      <span className="inline-flex items-baseline font-medium leading-tight hover:text-default-500 focus-visible:text-default-500 transition ease-in-and-out duration-300 transition-colors">
                         <span>{title}</span>
                       </span>
                     </h3>
