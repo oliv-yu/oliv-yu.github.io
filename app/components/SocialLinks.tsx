@@ -4,17 +4,14 @@ import Icon from "./Icon";
 const SOCIAL_LINKS = [
   {
     name: "GitHub",
-    icon: "github",
     link: "https://github.com/oliv-yu",
   },
   {
     name: "LinkedIn",
-    icon: "linkedin",
     link: "https://www.linkedin.com/in/oliviayu/",
   },
   {
     name: "Email",
-    icon: "email",
     link: "mailto:olivyu@gmail.com",
   },
 ];
@@ -38,7 +35,7 @@ export default function Footer() {
             <span className="sr-only">{item.name}</span>
 
             <Icon
-              icon={item.icon}
+              icon={item.name.toLowerCase()}
               cssClass="fill-default-50 h-6 w-6 hover:fill-default-500 transition ease-in-and-out duration-300 transition-colors"
             />
           </a>

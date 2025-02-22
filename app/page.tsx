@@ -14,7 +14,13 @@ export default function Page() {
           <div>
             <Introduction />
 
-            <PageLinks />
+            <PageLinks
+              links={[
+                { name: "About", href: "#about" },
+                { name: "Skills", href: "#skills" },
+                { name: "Projects", href: "#projects" },
+              ]}
+            />
           </div>
 
           <SocialLinks />
