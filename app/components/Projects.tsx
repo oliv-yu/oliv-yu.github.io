@@ -63,6 +63,7 @@ function Link({ type, href }) {
           cssClass={"inline fill-default-50 " + linkData[type].dimensions}
         />
         <span>{linkData[type].text}</span>
+        <Icon icon="arrowup" cssClass={"inline fill-default-50 h-3 w-3"} />
       </div>
     </a>
   );
