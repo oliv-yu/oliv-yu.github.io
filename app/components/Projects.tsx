@@ -82,7 +82,7 @@ export default function Projects() {
                 <div className="group opacity-100 relative grid gap-4 transition-all sm:grid-cols-6 sm:gap-8 md:gap-4 p-[20px]">
                   <div className="z-10 sm:col-span-2">
                     <img
-                      className="aspect-3/2 object-cover rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30"
+                      className="w-full h-[180px] object-cover rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30"
                       alt={`${title} Card`}
                       src={imagePath}
                     />
