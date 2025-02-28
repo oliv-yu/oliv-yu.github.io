@@ -40,7 +40,7 @@ export default function Page() {
           <CircleLoader />
         </div>
       ) : (
-        <div className="text-default-50 mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-16 lg:py-0">
+        <div className="text-default-100 mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-16 lg:py-0">
           <div
             className="h-[600px] w-[600px] pointer-events-none opacity-5 absolute rounded-[50%]"
             style={{

@@ -2,16 +2,16 @@ import React from "react";
 
 export default function About() {
   return (
-    <div className="about-content">
+    <div className="about-content text-slate-300">
       <p className="mb-4">
         I&apos;m a developer based in Southern California. I originally started
-        at
-        <a className="ml-1 mr-1" href="https://www.liferay.com/">
+        at&nbsp;
+        <a href="https://www.liferay.com/">
           <span className="text-default-400 font-bold">Liferay</span>
         </a>
-        as a QA engineer and later switched to frontend development. I love the
-        creativity and problem solving that comes with the work, making sure
-        that the user has an excellent experience on the product.
+        &nbsp;as a QA engineer and later switched to frontend development. I
+        love the creativity and problem solving that comes with the work, making
+        sure that the user has an excellent experience on the product.
       </p>
       <p className="mb-4">
         Currently, I am on the search infrastructure team at Liferay, where I

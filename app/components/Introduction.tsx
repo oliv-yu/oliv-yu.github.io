@@ -10,7 +10,7 @@ export default function Introduction() {
       <h1 className="animate-enter-2 cursor-pointer text-4xl font-bold sm:text-5xl hover:text-default-500 transition ease-in-and-out duration-300 transition-colors">
         Olivia Yu Wong.
       </h1>
-      <h2 className="animate-enter-3 mt-3 text-lg font-medium sm:text-xl">
+      <h2 className="animate-enter-3 mt-6 text-lg font-medium sm:text-xl">
         I&apos;m a <span className="text-default-300">frontend developer</span>.
       </h2>
     </div>
