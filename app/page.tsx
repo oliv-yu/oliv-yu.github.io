@@ -126,7 +126,7 @@ export default function Page() {
                     <p>How about I interest you in a game?</p>
                     <p>
                       See how long Capybara can last dodging the rocks. Click or
-                      press 'Space' / 'Enter' to jump.
+                      press &apos;Space&apos; / &apos;Enter&apos; to jump.
                     </p>
                   </div>
 
