@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import About from "./components/About";
 import Introduction from "./components/Introduction";
+import JumpGame from "./components/JumpGame";
 import PageLinks from "./components/PageLinks";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
@@ -61,6 +62,7 @@ export default function Page() {
                     { name: "About", href: "#about" },
                     { name: "Skills", href: "#skills" },
                     { name: "Projects", href: "#projects" },
+                    { name: "Game", href: "#game" },
                   ]}
                 />
               </div>
@@ -108,6 +110,27 @@ export default function Page() {
                   </h1>
 
                   <Projects />
+                </section>
+
+                <section
+                  id="game"
+                  className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24 tracking-wide"
+                  aria-label="Game"
+                >
+                  <h1 className="text-xs font-bold uppercase tracking-widest mb-3">
+                    Game
+                  </h1>
+
+                  <div className="mb-4 italic text-xs/6">
+                    <p>Thanks for stopping by!</p>
+                    <p>How about I interest you in a game?</p>
+                    <p>
+                      See how long Capybara can last dodging the rocks. Click or
+                      press 'Space' / 'Enter' to jump.
+                    </p>
+                  </div>
+
+                  <JumpGame />
                 </section>
 
                 <footer className="max-w-md pb-16 text-sm text-slate-500 sm:pb-0">
