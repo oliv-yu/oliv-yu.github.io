@@ -81,7 +81,7 @@ export default function Page() {
                   className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24 tracking-wide"
                   aria-label="About"
                 >
-                  <h1 className="text-xs font-bold uppercase tracking-widest mb-3">
+                  <h1 className="text-md font-bold uppercase tracking-widest mb-3">
                     About
                   </h1>
 
@@ -93,7 +93,7 @@ export default function Page() {
                   className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24 tracking-wide"
                   aria-label="Skills"
                 >
-                  <h1 className="text-xs font-bold uppercase tracking-widest mb-3 ">
+                  <h1 className="text-md font-bold uppercase tracking-widest mb-3 ">
                     Skills
                   </h1>
 
@@ -105,7 +105,7 @@ export default function Page() {
                   className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24 tracking-wide"
                   aria-label="Projects"
                 >
-                  <h1 className="text-xs font-bold uppercase tracking-widest mb-5">
+                  <h1 className="text-md font-bold uppercase tracking-widest mb-5">
                     Projects
                   </h1>
 
@@ -117,7 +117,7 @@ export default function Page() {
                   className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24 tracking-wide"
                   aria-label="Game"
                 >
-                  <h1 className="text-xs font-bold uppercase tracking-widest mb-3">
+                  <h1 className="text-md font-bold uppercase tracking-widest mb-3">
                     Game
                   </h1>
 
