@@ -22,8 +22,8 @@ export default function Page() {
   useEffect(() => {
     const handleMouse = (event: MouseEvent) => {
       setPointer({
-        x: event.clientX + window.scrollX,
-        y: event.clientY + window.scrollY,
+        x: event.clientX,
+        y: event.clientY,
       });
     };
 
@@ -43,7 +43,7 @@ export default function Page() {
       ) : (
         <div className="text-default-100 mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-16 lg:py-0">
           <div
-            className="h-[600px] w-[600px] pointer-events-none opacity-5 absolute rounded-[50%]"
+            className="h-[600px] w-[600px] pointer-events-none opacity-5 fixed rounded-[50%]"
             style={{
               left: pointer.x,
               top: pointer.y,
