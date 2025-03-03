@@ -75,7 +75,7 @@ function JumpGame() {
         getComputedStyle(capybaraRef.current).getPropertyValue("top")
       );
 
-      let rockXPosition = parseInt(
+      const rockXPosition = parseInt(
         getComputedStyle(rockRef.current).getPropertyValue("left")
       );
 
