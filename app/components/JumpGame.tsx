@@ -117,7 +117,7 @@ function JumpGame() {
         {!isRunning && (
           <div className="absolute w-full h-full">
             <button
-              className="absolute border-1 border-dashed p-2 hover:bg-white hover:text-black w-[80%] top-[20%] left-[10%] z-10"
+              className="absolute cursor-pointer border-1 border-dashed p-2 hover:bg-white hover:text-black w-[80%] top-[20%] left-[10%] z-10"
               onClick={handleStart}
             >
               {score > 0

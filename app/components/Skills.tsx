@@ -20,7 +20,7 @@ export default function Skills() {
           <div className="flex flex-wrap font-mono text-xs space-x-3 sm:space-x-4 sm:col-span-3">
             {skills.map((item) => (
               <p
-                className="my-4 cursor-pointer hover:scale-125 hover:text-md hover:tracking-wider hover:ease-in-and-out transition"
+                className="my-4 cursor-default hover:scale-125 hover:text-md hover:tracking-wider hover:ease-in-and-out transition"
                 key={`skill-${item}`}
               >
                 <span className="rounded-3xl border-1 border-default-400 py-2 px-3 hover:bg-default-500 transition ease-in-and-out duration-300 transition-colors">
