@@ -11,26 +11,10 @@ import { CircleLoader } from "./LoaderIcon";
 
 export default function () {
   const [isLoading, setIsLoading] = useState(true);
-  const [pointer, setPointer] = useState({ x: 0, y: 0 });
 
   setTimeout(() => {
     setIsLoading(false);
   }, 2250);
-
-  useEffect(() => {
-    const handleMouse = (event: MouseEvent) => {
-      setPointer({
-        x: event.clientX,
-        y: event.clientY,
-      });
-    };
-
-    window.addEventListener("mousemove", handleMouse);
-
-    return () => {
-      window.removeEventListener("mousemove", handleMouse);
-    };
-  });
 
   return (
     <>
@@ -40,16 +24,6 @@ export default function () {
         </div>
       ) : (
         <div className="bg-zinc-900 text-default-100 mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-16 lg:py-0">
-          <div
-            className="h-[600px] w-[600px] pointer-events-none opacity-5 fixed rounded-[50%]"
-            style={{
-              left: pointer.x,
-              top: pointer.y,
-              background: `radial-gradient(circle at center, #7c2d12 0, #1e3a8a, #1e1b4b 100%)`,
-              transform: "translate(-50%, -50%)",
-            }}
-          />
-
           <div className="lg:flex lg:justify-between lg:gap-4">
             <header className="tracking-wider lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[33%] lg:flex-col lg:justify-between lg:py-24">
               <div>
