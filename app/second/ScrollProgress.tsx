@@ -11,7 +11,7 @@ const ScrollProgress = () => {
   });
 
   // This hooks the color to the scroll position
-  // It will transition from Purple to Neon Yellow as you reach the bottom
+  // It will transition from Blue to Neon Yellow as you reach the bottom
   const backgroundColor = useTransform(
     scrollYProgress,
     [0, 1],

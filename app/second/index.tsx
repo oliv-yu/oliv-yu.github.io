@@ -1,6 +1,8 @@
 import MagneticWrapper from "./MagneticWrapper";
 import { motion } from "motion/react";
 import Projects from "./Projects";
+import SpotlightLab from "./SpotlightLab";
+import Location from "./Location";
 
 const SKILLS_LIST = [
   {
@@ -39,8 +41,7 @@ export default function index() {
             OLIVIA <br /> YU WONG
           </h1>
           <p className="text-xl text-neutral-200 max-w-md italic">
-            Developing digital experiences through the lens of quality and
-            motion.
+            Developing digital experiences through the lens of quality.
           </p>
         </motion.div>
 
@@ -71,27 +72,17 @@ export default function index() {
           </div>
         </motion.div>
 
-        <div className="md:col-span-3 md:row-span-2 bg-[#111] border border-white/5 rounded-[3rem] p-8 flex items-center justify-between group"></div>
+        <SpotlightLab />
 
-        {/* 3. FUN FACT FILLER */}
-        <motion.div
-          whileHover={{ scale: 1.03 }}
-          className="md:col-span-1 md:row-span-1 bg-[#111] border border-white/5 rounded-[3rem] p-8 flex items-center justify-between group"
-        >
-          <div>
-            <p className="text-xs text-blue-400 font-mono mb-1">// Location</p>
-            <h3 className="text-md font-medium text-neutral-200 mb-2 bricolage-grotesque">
-              Orange County 😎
-            </h3>
-          </div>
-        </motion.div>
+        {/* 3. LOCATION */}
+        <Location />
 
         {/* 4. THE HISTORY CARD (Experience) */}
         <motion.div
           whileHover={{ scale: 1.03 }}
           className="md:col-span-2 md:row-span-1 min-sm:col-span-1 min-sm:row-span-1 bg-[#111] border border-white/5 rounded-[3rem] p-8 "
         >
-          <p className="text-xs text-blue-400 font-mono mb-1">// History</p>
+          <p className="text-xs text-blue-400 font-mono mb-1">// Experience</p>
 
           <div className="flex items-center justify-between">
             <div>
@@ -101,12 +92,18 @@ export default function index() {
                 </p>
                 <h5 className="text-md font-medium text-neutral-200">
                   Frontend Engineer @ Liferay
+                  <span className="text-xs uppercase rounded-3xl border-1 border-slate-400 text-neutral-400 px-2 py-1 ml-2 hover:bg-neutral-600 transition ease-in-and-out duration-100 transition-colors">
+                    6+ years
+                  </span>
                 </h5>
               </div>
               <div>
                 <p className="text-xs text-blue-400 font-mono">2015 - 2019</p>
                 <h5 className="text-md font-medium text-neutral-200">
                   Quality Assurance Engineer @ Liferay
+                  <span className="text-xs uppercase rounded-3xl border-1 border-slate-400 text-neutral-400 px-2 py-1 ml-2 hover:bg-neutral-600 transition ease-in-and-out duration-100 transition-colors">
+                    4 years
+                  </span>
                 </h5>
               </div>
             </div>

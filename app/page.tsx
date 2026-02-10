@@ -15,7 +15,7 @@ export default function Page() {
 
       {/* <DecorativeAura /> */}
 
-      {/* <ScrollProgress /> */}
+      <ScrollProgress />
 
       <Second />
 
