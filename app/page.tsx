@@ -11,8 +11,6 @@ import Pointer from "./second/Pointer";
 export default function Page() {
   return (
     <>
-      {/* <Pointer /> */}
-
       {/* <DecorativeAura /> */}
 
       <ScrollProgress />

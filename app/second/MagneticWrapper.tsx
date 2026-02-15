@@ -14,7 +14,7 @@ const MagneticWrapper = ({ children }) => {
     const middleY = clientY - (top + height / 2);
 
     // Set the strength of the magnet (0.2 = 20% of the distance)
-    setPosition({ x: middleX * 0.2, y: middleY * 0.2 });
+    setPosition({ x: middleX * 0.5, y: middleY * 0.5 });
   };
 
   const reset = () => {

@@ -102,7 +102,7 @@ export default function () {
                     </p>
                   </div>
 
-                  <JumpGame />
+                  {/* <JumpGame /> */}
                 </section>
 
                 <footer className="max-w-md pb-16 text-sm text-slate-500 sm:pb-0">

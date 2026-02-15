@@ -17,6 +17,7 @@ export default function Location() {
       <div className="relative">
         <p className="text-neutral-200 font-bold text-sm">Based in</p>
         <h3 className="text-xl font-bold">Orange County, CA</h3>
+
         {/* The Pulse Dot */}
         <div className="mt-4 flex items-center gap-2">
           <span className="relative flex h-3 w-3">

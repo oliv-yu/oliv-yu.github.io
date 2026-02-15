@@ -3,6 +3,8 @@ import { motion } from "motion/react";
 import Projects from "./Projects";
 import SpotlightLab from "./SpotlightLab";
 import Location from "./Location";
+import SocialLinks from "./SocialLinks";
+import JumpGame from "./JumpGame";
 
 const SKILLS_LIST = [
   {
@@ -26,13 +28,15 @@ const SKILLS_LIST = [
 export default function index() {
   return (
     <div className="min-h-screen bg-slate-900 text-white p-6 font-sans selection:bg-blue-500">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 md:grid-rows-4 gap-4 auto-rows-[180px]">
+      <motion.div
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 md:grid-rows-4 gap-7 auto-rows-[180px]"
+      >
         {/* 1. THE HERO (Creative & Bold) */}
         <motion.div
           whileHover={{ scale: 1.01 }}
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="md:col-span-4 md:row-span-2 min-sm:col-span-1 min-sm:row-span-3 max-sm:col-span-1 max-sm:row-span-3 bg-white/[0.03] border border-white/10 backdrop-blur-md rounded-[3rem] p-12 flex flex-col justify-end relative overflow-hidden group"
+          className="md:col-span-4 md:row-span-2 min-sm:col-span-1 min-sm:row-span-3 max-sm:col-span-1 max-sm:row-span-3 bg-white/[0.03] border border-white/10 backdrop-blur-md rounded-[3rem] p-8 flex flex-col justify-end relative overflow-hidden group"
         >
           <div className="absolute top-8 right-8 text-xs tracking-[0.2em] text-blue-400 uppercase font-bold">
             Frontend Developer
@@ -72,12 +76,13 @@ export default function index() {
           </div>
         </motion.div>
 
+        {/* 3. SPOTLIGHT LAB */}
         <SpotlightLab />
 
-        {/* 3. LOCATION */}
+        {/* 4. LOCATION */}
         <Location />
 
-        {/* 4. THE HISTORY CARD (Experience) */}
+        {/* 5. THE HISTORY CARD (Experience) */}
         <motion.div
           whileHover={{ scale: 1.03 }}
           className="md:col-span-2 md:row-span-1 min-sm:col-span-1 min-sm:row-span-1 bg-[#111] border border-white/5 rounded-[3rem] p-8 "
@@ -87,7 +92,7 @@ export default function index() {
           <div className="flex items-center justify-between">
             <div>
               <div className="mb-1">
-                <p className="text-xs text-blue-400 font-mono">
+                <p className="text-xs text-purple-400 font-mono">
                   2019 - Present
                 </p>
                 <h5 className="text-md font-medium text-neutral-200">
@@ -98,9 +103,9 @@ export default function index() {
                 </h5>
               </div>
               <div>
-                <p className="text-xs text-blue-400 font-mono">2015 - 2019</p>
+                <p className="text-xs text-purple-400 font-mono">2015 - 2019</p>
                 <h5 className="text-md font-medium text-neutral-200">
-                  Quality Assurance Engineer @ Liferay
+                  QA Engineer @ Liferay
                   <span className="text-xs uppercase rounded-3xl border-1 border-slate-400 text-neutral-400 px-2 py-1 ml-2 hover:bg-neutral-600 transition ease-in-and-out duration-100 transition-colors">
                     4 years
                   </span>
@@ -116,23 +121,14 @@ export default function index() {
           </div>
         </motion.div>
 
-        {/* 5. PROJECTS (Visual Focus) */}
+        {/* 6. PROJECTS (Visual Focus) */}
         <Projects />
 
-        {/* 6. CONNECT CARD (Call to Action) */}
-        <div className="md:col-span-2 md:row-span-1">
-          <MagneticWrapper>
-            <motion.div
-              className=" bg-[#EBFF00] rounded-[3rem] p-8 flex items-center justify-center text-black"
-              whileHover={{ rotate: -2 }}
-            >
-              <span className="text-3xl font-black uppercase tracking-tighter">
-                Let's Create!
-              </span>
-            </motion.div>
-          </MagneticWrapper>
-        </div>
-      </div>
+        {/* 7. CONNECT CARD (Call to Action) */}
+        <SocialLinks />
+
+        <JumpGame />
+      </motion.div>
     </div>
   );
 }
