@@ -28,7 +28,7 @@ export default function SpotlightLab() {
       onMouseEnter={() => setIsHovered(true)}
       onMouseMove={handleMouseMove}
       onMouseLeave={resetMouse}
-      className="md:col-span-3 md:row-span-2 relative bg-[#0a0a0a] rounded-[3rem] border border-white/10 overflow-hidden flex items-center justify-center cursor-crosshair"
+      className="w-full h-full overflow-hidden flex items-center justify-center cursor-crosshair"
     >
       <div className="absolute inset-0 opacity-20 [background-image:radial-gradient(#444_1px,transparent_1px)] [background-size:20px_20px]" />
 

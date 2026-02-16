@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import "../jumpGame2.css";
+import "./jumpGame.css";
 
 function JumpGame() {
   const capybaraRef = useRef(null);
@@ -109,45 +109,31 @@ function JumpGame() {
   });
 
   return (
-    <>
-      <div className="mb-4 italic text-xs/6">
-        <p>Thanks for stopping by!</p>
-        <p>How about I interest you in a game?</p>
-        <p>
-          See how long Capybara can last dodging the rocks. Click or press
-          &apos;Space&apos; / &apos;Enter&apos; to jump.
-        </p>
-      </div>
-      <div className="md:col-span-4 md:row-span-2 border-3 border-white/5 border-dashed rounded-[3rem] font-mono relative focus:outline-0 w-full h-full">
-        <div
-          id="jumpGame"
-          ref={jumpGameRef}
-          className=""
-          onClick={handleClick}
-          onKeyDown={handleKeyDownJump}
-          tabIndex={0}
-        >
-          {!isRunning && (
-            <div className="absolute w-full h-full">
-              <button
-                className="absolute cursor-pointer border-1 border-dashed p-2 hover:bg-white hover:text-black w-[80%] top-[20%] left-[10%] z-10"
-                onClick={handleStart}
-              >
-                {score > 0
-                  ? `Congrats! You lasted ${score}sec. Restart.`
-                  : "Click to start!"}
-              </button>
-            </div>
-          )}
-          <div className="w-full h-full">
-            <span>Time elapsed : {score}s</span>
+    <div
+      id="jumpGame"
+      ref={jumpGameRef}
+      className=""
+      onClick={handleClick}
+      onKeyDown={handleKeyDownJump}
+      tabIndex={0}
+    >
+      <div className="w-full h-full text-center">
+        {!isRunning && (
+          <button
+            className="absolute cursor-pointer border-1 border-dashed p-2 hover:bg-white hover:text-black w-[80%] top-[20%] left-[10%] z-10"
+            onClick={handleStart}
+          >
+            {score > 0
+              ? `Congrats! You lasted ${score}sec. Restart.`
+              : "Click to start!"}
+          </button>
+        )}
+        <span>Time elapsed : {score}s</span>
 
-            <div id="capybara" ref={capybaraRef}></div>
-            <div id="rock" ref={rockRef}></div>
-          </div>
-        </div>
+        <div id="capybara" ref={capybaraRef}></div>
+        <div id="rock" ref={rockRef}></div>
       </div>
-    </>
+    </div>
   );
 }
 

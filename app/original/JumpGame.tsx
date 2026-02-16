@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import "../jumpGame.css";
+import "./jumpGame.css";
 
 function JumpGame() {
   const capybaraRef = useRef(null);
@@ -72,11 +72,11 @@ function JumpGame() {
   useEffect(() => {
     const keepRunning = setInterval(() => {
       const capybaraYPosition = parseInt(
-        getComputedStyle(capybaraRef.current).getPropertyValue("top")
+        getComputedStyle(capybaraRef.current).getPropertyValue("top"),
       );
 
       const rockXPosition = parseInt(
-        getComputedStyle(rockRef.current).getPropertyValue("left")
+        getComputedStyle(rockRef.current).getPropertyValue("left"),
       );
 
       if (

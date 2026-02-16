@@ -1,11 +1,6 @@
-import { motion } from "motion/react";
-
 export default function Location() {
   return (
-    <motion.div
-      whileHover={{ scale: 1.03 }}
-      className="md:col-span-1 md:row-span-1 bg-[#111] border border-white/5 rounded-[3rem] p-8 flex items-center justify-between group relative overflow-hidden group"
-    >
+    <>
       <img
         className="absolute inset-0 opacity-60 group-hover:scale-110 transition-transform duration-700"
         alt="Map of OC"
@@ -27,6 +22,6 @@ export default function Location() {
           <span className="text-xs font-mono text-neutral-400">HELLO!</span>
         </div>
       </div>
-    </motion.div>
+    </>
   );
 }
