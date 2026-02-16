@@ -68,9 +68,9 @@ function Project({
   return (
     <motion.div
       whileHover={{ scale: 0.98 }}
-      className="col-span-1 md:col-span-2 md:row-span-2 min-h-[350px] md:min-h-0 md:h-full bg-neutral-900 rounded-[3rem] relative overflow-hidden group"
+      className="col-span-1 md:col-span-2 md:row-span-2 min-h-[350px] md:min-h-0 md:h-full bg-black-900 rounded-[3rem] relative overflow-hidden group shadow-lg shadow-blue-500/50"
     >
-      <div className="absolute top-8 right-8 z-20 text-xs tracking-[0.2em] text-blue-400 uppercase font-bold">
+      <div className="absolute top-8 right-8 z-20 text-xs tracking-[0.2em] text-blue-800 uppercase font-bold">
         PROJECT
       </div>
 

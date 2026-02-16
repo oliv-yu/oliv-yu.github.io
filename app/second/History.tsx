@@ -1,26 +1,28 @@
 export default function History() {
   return (
     <>
-      <p className="text-xs text-blue-400 font-mono mb-1">// Experience</p>
+      <p className="text-xs text-blue-400 font-mono mb-1 uppercase">
+        // Experience
+      </p>
 
       <div className="flex items-center justify-between">
         <div>
           <div className="mb-1">
             <p className="text-xs text-purple-400 font-mono">2019 - Present</p>
-            <h5 className="text-md font-medium text-neutral-200">
+            <h5 className="text-md font-medium text-neutral-200 flex">
               Frontend Engineer @ Liferay
-              <span className="text-xs uppercase rounded-3xl border-1 border-slate-400 text-neutral-400 px-2 py-1 ml-2 hover:bg-neutral-600 transition ease-in-and-out duration-100 transition-colors">
+              <div className="text-xs uppercase rounded-3xl border-1 border-slate-400 text-neutral-400 px-2 py-1 ml-2 hover:bg-neutral-600 transition ease-in-and-out duration-100 transition-colors">
                 6+ years
-              </span>
+              </div>
             </h5>
           </div>
           <div>
             <p className="text-xs text-purple-400 font-mono">2015 - 2019</p>
-            <h5 className="text-md font-medium text-neutral-200">
+            <h5 className="text-md font-medium text-neutral-200 flex">
               QA Engineer @ Liferay
-              <span className="text-xs uppercase rounded-3xl border-1 border-slate-400 text-neutral-400 px-2 py-1 ml-2 hover:bg-neutral-600 transition ease-in-and-out duration-100 transition-colors">
+              <div className="text-xs uppercase rounded-3xl border-1 border-slate-400 text-neutral-400 px-2 py-1 ml-2 hover:bg-neutral-600 transition ease-in-and-out duration-100 transition-colors">
                 4 years
-              </span>
+              </div>
             </h5>
           </div>
         </div>

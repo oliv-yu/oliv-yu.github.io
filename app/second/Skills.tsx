@@ -11,10 +11,12 @@ const SKILLS_LIST = [
       "Node.js",
       "Storybook",
       "Git",
+      "Playwright",
+      "Jest",
+      "Selenium",
     ],
     title: "Toolkit",
   },
-  { skills: ["Playwright", "Jest", "Selenium"], title: "Testing" },
 ];
 
 export default function Skills() {

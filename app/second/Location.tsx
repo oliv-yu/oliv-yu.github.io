@@ -28,13 +28,13 @@ export default function Location() {
 
       <div className="flex flex-col justify-between h-full w-full">
         <div className="flex justify-between items-start">
-          <div className="flex flex-col">
+          <div className="flex flex-col mb-1">
             <p className="text-[10px] font-mono text-blue-400 uppercase tracking-[0.2em]">
               Based in
             </p>
             <h3 className="text-xl font-bold text-white">Southern CA</h3>
           </div>
-          <span className="text-2xl">📍</span>
+          <span className="text-xl">📍</span>
         </div>
 
         <div className="bg-white/5 rounded-2xl p-4 flex items-center justify-between border border-white/5">

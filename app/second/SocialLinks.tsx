@@ -15,7 +15,7 @@ const SOCIAL_LINKS = [
 
 export default function SocialLinks() {
   return (
-    <div className="items-center flex ">
+    <div className="items-center flex">
       <ul className="flex items-center" aria-label="Social media">
         {SOCIAL_LINKS.map((item, idx) => (
           <li className="mr-8 shrink-0" key={`link-${idx}-${item.name}`}>
@@ -45,8 +45,8 @@ export default function SocialLinks() {
           className=" bg-[#EBFF00] rounded-[3rem] p-8 flex items-center justify-center text-black"
           href="mailto:olivyu@gmail.com"
         >
-          <span className="text-3xl font-black uppercase tracking-tighter">
-            Let's Create!
+          <span className="text-3xl font-black uppercase tracking-tighter text-center">
+            Let's Chat!
           </span>
         </a>
       </MagneticWrapper>
