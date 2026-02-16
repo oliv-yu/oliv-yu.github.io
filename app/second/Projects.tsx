@@ -68,43 +68,49 @@ function Project({
   return (
     <motion.div
       whileHover={{ scale: 0.98 }}
-      className="md:col-span-2 md:row-span-2 min-sm:col-span-1 min-sm:row-span-2 min-sm:col-span-1 min-sm:row-span-2 max-sm:col-span-1 max-sm:row-span-2 bg-neutral-900 rounded-[3rem] relative overflow-hidden group"
+      className="col-span-1 md:col-span-2 md:row-span-2 min-h-[350px] md:min-h-0 md:h-full bg-neutral-900 rounded-[3rem] relative overflow-hidden group"
     >
-      <div className="absolute top-8 right-8 text-xs tracking-[0.2em] text-blue-400 uppercase font-bold">
+      <div className="absolute top-8 right-8 z-20 text-xs tracking-[0.2em] text-blue-400 uppercase font-bold">
         PROJECT
       </div>
+
       <img
-        className="absolute inset-0 opacity-60 group-hover:scale-110 transition-transform duration-700"
+        className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700"
         alt={`${title} Card`}
         src={imagePath}
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
-      <div className="absolute bottom-8 left-8 right-8">
-        <div className="justify-between mb-1 text-3xl flex">
-          <span className="font-bold">{title}</span>
+      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent z-10" />
 
-          <div>
+      <div className="absolute bottom-6 left-6 right-6 md:bottom-8 md:left-8 md:right-8 z-20">
+        <div className="flex justify-between items-end mb-2">
+          <span className="text-2xl md:text-3xl font-bold">{title}</span>
+
+          <div className="flex gap-3">
             <Icon
               icon="github"
-              cssClass="inline-block w-[1em] h-[1em] fill-default-100 hover:fill-slate-800 mx-2"
+              cssClass="w-6 h-6 fill-white hover:fill-blue-400 transition-colors"
               href={repoLink}
             />
             <Icon
-              cssClass="inline-block w-[1em] h-[1em] fill-default-100 hover:fill-slate-800"
-              href={demoLink}
               icon="darkLink"
+              cssClass="w-6 h-6 fill-white hover:fill-blue-400 transition-colors"
+              href={demoLink}
             />
           </div>
         </div>
-        <span className="text-white/60">{description}</span>
 
-        <div className="flex flex-wrap text-xs uppercase space-x-1 mt-2">
+        <p className="text-sm md:text-base text-white/70 line-clamp-2">
+          {description}
+        </p>
+
+        <div className="flex flex-wrap gap-2 mt-4">
           {skills.map((item) => (
-            <p className="my-2" key={`${title}-${item}-${Math.random()}`}>
-              <span className="rounded-3xl border-1 border-slate-400 text-neutral-400 py-1 px-2 hover:bg-neutral-600 transition ease-in-and-out duration-100 transition-colors">
-                {item}
-              </span>
-            </p>
+            <span
+              key={item}
+              className="text-[10px] md:text-xs uppercase tracking-wider rounded-full border border-white/20 bg-white/5 py-1 px-3 text-neutral-300"
+            >
+              {item}
+            </span>
           ))}
         </div>
       </div>

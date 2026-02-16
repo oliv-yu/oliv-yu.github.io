@@ -15,35 +15,37 @@ export default function index() {
       <DecorativeAura />
 
       <ScrollProgress />
-      <div className="min-h-screen bg-slate-900 text-white p-6 font-sans selection:bg-blue-500">
+
+      <div className="min-h-screen bg-slate-950 text-white p-6 font-sans selection:bg-blue-500">
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 md:grid-rows-4 gap-7 auto-rows-[180px]"
+          className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 md:grid-rows-4 gap-4 md:gap-7 auto-rows-auto md:auto-rows-[180px]"
         >
           <motion.div
             whileHover={{ scale: 1.01 }}
-            className="md:col-span-4 md:row-span-2 min-sm:col-span-1 min-sm:row-span-3 max-sm:col-span-1 max-sm:row-span-3 bg-white/[0.03] border border-white/10 backdrop-blur-md rounded-[3rem] p-8 flex flex-col justify-end relative overflow-hidden group"
+            className="col-span-1 md:col-span-4 md:row-span-2 bg-white/[0.03] border border-white/10 backdrop-blur-md rounded-[2.5rem] md:rounded-[3rem] p-6 md:p-10 flex flex-col justify-end relative overflow-hidden group min-h-[300px] md:min-h-0"
           >
-            <div className="absolute top-8 right-8 text-xs tracking-[0.2em] text-blue-400 uppercase font-bold">
+            {/* Label: Relative on mobile to prevent overlap, absolute on desktop */}
+            <div className="relative md:absolute md:top-8 md:right-8 text-[10px] tracking-[0.2em] text-blue-400 uppercase font-bold mb-4 md:mb-0">
               Frontend Developer
             </div>
-            <h1 className="text-6xl md:text-8xl font-black tracking-tighter leading-none mb-4 bg-gradient-to-t from-white to-white/50 bg-clip-text">
+            <h1 className="text-5xl md:text-8xl font-black tracking-tighter leading-[0.85] mb-4 bg-gradient-to-t from-white to-white/50 bg-clip-text text-transparent">
               OLIVIA <br /> YU WONG
             </h1>
-            <p className="text-xl text-neutral-200 max-w-md italic">
+            <p className="text-lg md:text-xl text-neutral-300 max-w-md italic">
               Developing digital experiences through the lens of quality.
             </p>
           </motion.div>
 
           <motion.div
             whileHover={{ scale: 1.03 }}
-            className="md:col-span-1 md:row-span-3 min-sm:col-span-1 min-sm:row-span-2 max-sm:col-span-1 max-sm:row-span-2 bg-gradient-to-b from-cyan-600 to-blue-700 rounded-[3rem] p-8 flex flex-col justify-between shadow-[0_0_40px_-10px_rgba(147,51,234,0.3)]"
+            className="col-span-1 md:col-span-1 md:row-span-3 bg-gradient-to-b from-cyan-600 to-blue-700 rounded-[2.5rem] md:rounded-[3rem] p-8 flex flex-col justify-between shadow-[0_0_40px_-10px_rgba(6,182,212,0.3)]"
           >
             <Skills />
           </motion.div>
 
-          <div className="md:col-span-3 md:row-span-2 relative bg-[#0a0a0a] rounded-[3rem] border border-white/10 ">
+          <div className="col-span-1 md:col-span-3 md:row-span-2 relative bg-[#0a0a0a] rounded-[2.5rem] md:rounded-[3rem] border border-white/10 min-h-[250px] md:min-h-0">
             <SpotlightLab />
           </div>
 
@@ -56,7 +58,7 @@ export default function index() {
 
           <motion.div
             whileHover={{ scale: 1.03 }}
-            className="md:col-span-2 md:row-span-1 min-sm:col-span-1 min-sm:row-span-1 bg-[#111] border border-white/5 rounded-[3rem] p-8 "
+            className="col-span-1 md:col-span-2 md:row-span-1 bg-[#111] border border-white/5 rounded-[2.5rem] md:rounded-[3rem] p-8"
           >
             <History />
           </motion.div>
