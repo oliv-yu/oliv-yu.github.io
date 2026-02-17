@@ -1,11 +1,11 @@
-import { useRef, useState } from "react";
+import { useRef, useState, MouseEvent } from "react";
 import { motion } from "motion/react";
 
 const MagneticWrapper = ({ children }) => {
   const ref = useRef(null);
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
-  const handleMouseMove = (event: MouseEvent) => {
+  const handleMouseMove = (event: MouseEvent<HTMLDivElement>) => {
     const { clientX, clientY } = event;
     const { width, height, left, top } = ref.current.getBoundingClientRect();
 
