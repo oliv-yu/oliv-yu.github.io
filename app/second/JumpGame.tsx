@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState, KeyboardEvent } from "react";
 import "./jumpGame.css";
 
 function JumpGame() {
@@ -51,7 +51,7 @@ function JumpGame() {
     }
   };
 
-  const handleKeyDownJump = (event: KeyboardEvent) => {
+  const handleKeyDownJump = (event: KeyboardEvent<HTMLDivElement>) => {
     if ((event.code === "Space" || event.code === "Enter") && isRunning) {
       event.preventDefault();
 
