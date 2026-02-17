@@ -1,8 +1,8 @@
 export default function History() {
   return (
     <>
-      <p className="text-xs text-blue-400 font-mono mb-1 uppercase">
-        // Experience
+      <p className="text-xs text-blue-400 font-mono mb-1 uppercase tracking-widest">
+        Experience
       </p>
 
       <div className="flex items-center justify-between">

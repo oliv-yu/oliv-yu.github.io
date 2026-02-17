@@ -22,22 +22,24 @@ export default function Location() {
     <>
       <img
         className="absolute inset-0 opacity-10 group-hover:scale-110 transition-transform duration-700"
-        alt="Map of OC"
+        alt="Map of SoCal"
         src="/images/map.png"
       />
 
       <div className="flex flex-col justify-between h-full w-full">
         <div className="flex justify-between items-start">
-          <div className="flex flex-col mb-1">
-            <p className="text-[10px] font-mono text-blue-400 uppercase tracking-[0.2em]">
+          <div className="flex flex-col mb-2">
+            <p className="text-xs font-mono text-amber-400 uppercase tracking-widest">
               Based in
             </p>
-            <h3 className="text-xl font-bold text-white">Southern CA</h3>
+            <h3 className="text-lg font-bold text-white">
+              Southern California
+            </h3>
           </div>
-          <span className="text-xl">📍</span>
+          <span className="text-lg">📍</span>
         </div>
 
-        <div className="bg-white/5 rounded-2xl p-4 flex items-center justify-between border border-white/5">
+        <div className="bg-white/5 rounded-2xl p-3 flex items-center justify-between border border-white/5">
           <div className="flex flex-col">
             <p className="text-[10px] text-neutral-500 uppercase font-bold">
               Local Time

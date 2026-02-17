@@ -1,7 +1,9 @@
 import { motion } from "motion/react";
 import DecorativeAura from "./DecorativeAura";
 import History from "./History";
+import Hobbies from "./Hobbies";
 import JumpGame from "./JumpGame";
+import Listening from "./Listening";
 import Location from "./Location";
 import Projects from "./Projects";
 import ScrollProgress from "./ScrollProgress";
@@ -42,15 +44,17 @@ export default function index() {
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1 }}
-              className="text-2xl md:text-4xl font-medium tracking-tight leading-relaxed max-w-4xl"
+              className="text-2xl md:text-3xl font-medium tracking-tight leading-relaxed max-w-4xl"
             >
               <span className="text-neutral-500">Hi! I’m a </span>
-              <span className="text-blue-400 italic">frontend developer</span>
-              <span className="text-neutral-500">
-                {" "}
-                obsessed with blending technical{" "}
+              <span className="text-blue-400 italic md:text-3xl">
+                frontend developer
               </span>
-              <span className="text-white">quality</span>
+              <p className="text-neutral-500">
+                {" "}
+                obsessed with blending{" "}
+                <span className="text-white">technical quality</span>
+              </p>
               <span className="text-neutral-500"> with </span>
               <span className="text-amber-400">delightful motion.</span>
             </motion.h2>
@@ -95,6 +99,20 @@ export default function index() {
             className="col-span-1 md:col-span-3 md:row-span-1 bg-[#111] border border-white/5 rounded-[2.5rem] md:rounded-[3rem] p-8"
           >
             <History />
+          </motion.div>
+
+          <motion.div
+            whileHover={{ scale: 1.03 }}
+            className="col-span-1 md:col-span-1 md:row-span-1 bg-[#090909] border border-white/5 rounded-[2.5rem] md:rounded-[3rem] p-8 flex flex-col justify-between overflow-hidden relative group"
+          >
+            <Listening />
+          </motion.div>
+
+          <motion.div
+            whileHover={{ scale: 1.03 }}
+            className="col-span-1 md:col-span-3 md:row-span-1 bg-[#111] border border-white/5 rounded-[2.5rem] md:rounded-[3rem] p-8 flex flex-col justify-between overflow-hidden relative group"
+          >
+            <Hobbies />
           </motion.div>
 
           <div className="col-span-1 md:col-span-4 py-8 flex items-center gap-4">
