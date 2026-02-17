@@ -51,8 +51,10 @@ function JumpGame() {
     }
   };
 
-  const handleKeyDownJump = (event: { code: string }) => {
+  const handleKeyDownJump = (event: any) => {
     if ((event.code === "Space" || event.code === "Enter") && isRunning) {
+      event.preventDefault();
+
       jump();
     }
   };
@@ -112,27 +114,25 @@ function JumpGame() {
     <div
       id="jumpGame"
       ref={jumpGameRef}
-      className=""
+      className="w-full h-full text-center rounded-[3rem] focus-visible:outline-none"
       onClick={handleClick}
       onKeyDown={handleKeyDownJump}
       tabIndex={0}
     >
-      <div className="w-full h-full text-center">
-        {!isRunning && (
-          <button
-            className="absolute cursor-pointer border-1 border-dashed p-2 hover:bg-white hover:text-black w-[80%] top-[20%] left-[10%] z-10"
-            onClick={handleStart}
-          >
-            {score > 0
-              ? `Congrats! You lasted ${score}sec. Restart.`
-              : "Click to start!"}
-          </button>
-        )}
-        <span>Time elapsed : {score}s</span>
+      {!isRunning && (
+        <button
+          className="absolute cursor-pointer border-1 border-dashed p-2 hover:bg-white hover:text-black w-[80%] top-[20%] left-[10%] z-10"
+          onClick={handleStart}
+        >
+          {score > 0
+            ? `Congrats! You lasted ${score}sec. Restart.`
+            : "Click to start!"}
+        </button>
+      )}
+      <span>Time elapsed : {score}s</span>
 
-        <div id="capybara" ref={capybaraRef}></div>
-        <div id="rock" ref={rockRef}></div>
-      </div>
+      <div id="capybara" ref={capybaraRef}></div>
+      <div id="rock" ref={rockRef}></div>
     </div>
   );
 }

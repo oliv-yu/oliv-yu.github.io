@@ -130,7 +130,7 @@ export default function index() {
             </p>
           </div>
 
-          <div className="col-span-1 md:col-span-4 md:row-span-2 border-3 border-white/5 border-dashed rounded-[3rem] font-mono relative focus:outline-0 min-h-[250px]  w-full h-full">
+          <div className="col-span-1 md:col-span-4 md:row-span-2 border-3 border-white/50 border-dashed rounded-[3rem] font-mono relative min-h-[250px] w-full h-full">
             <JumpGame />
           </div>
 
