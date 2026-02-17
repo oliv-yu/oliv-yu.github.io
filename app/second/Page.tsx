@@ -11,7 +11,7 @@ import SocialLinks from "./SocialLinks";
 import SpotlightLab from "./SpotlightLab";
 import Skills from "./Skills";
 
-export default function index() {
+export default function Page() {
   return (
     <>
       <DecorativeAura />

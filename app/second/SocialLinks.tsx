@@ -46,7 +46,7 @@ export default function SocialLinks() {
           href="mailto:olivyu@gmail.com"
         >
           <span className="text-3xl font-black uppercase tracking-tighter text-center">
-            Let's Chat!
+            Let&apos;s Chat!
           </span>
         </a>
       </MagneticWrapper>

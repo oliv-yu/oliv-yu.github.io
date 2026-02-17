@@ -51,7 +51,7 @@ function JumpGame() {
     }
   };
 
-  const handleKeyDownJump = (event: any) => {
+  const handleKeyDownJump = (event: KeyboardEvent) => {
     if ((event.code === "Space" || event.code === "Enter") && isRunning) {
       event.preventDefault();
 

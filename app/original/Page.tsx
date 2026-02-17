@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import About from "./About";
 import Introduction from "./Introduction";
 import JumpGame from "./JumpGame";
@@ -9,7 +9,7 @@ import SocialLinks from "./SocialLinks";
 import * as motion from "motion/react-client";
 import { CircleLoader } from "./LoaderIcon";
 
-export default function () {
+export default function Page() {
   const [isLoading, setIsLoading] = useState(true);
 
   setTimeout(() => {

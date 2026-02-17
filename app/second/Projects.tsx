@@ -63,8 +63,6 @@ function Project({
   demoLink: string;
   skills: string[];
 }) {
-  const className = `absolute inset-0 bg-[url('/images/waddle.png')] bg-cover bg-center opacity-60 group-hover:scale-110 transition-transform duration-700`;
-
   return (
     <motion.div
       whileHover={{ scale: 0.98 }}
@@ -118,6 +116,6 @@ function Project({
   );
 }
 
-export default function () {
+export default function Projects() {
   return PROJECTS_INFO.map((data) => <Project key={data.title} {...data} />);
 }

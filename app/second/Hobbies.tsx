@@ -34,7 +34,7 @@ export default function Hobbies() {
           <span className="relative inline-flex rounded-full h-2 w-2 bg-yellow-500"></span>
         </span>
         <span>
-          Currently working on: Solving a Rubik's Cube in under 5 minutes
+          Currently working on: Solving a Rubik&apos;s Cube in under 5 minutes
         </span>
       </div>
     </>
