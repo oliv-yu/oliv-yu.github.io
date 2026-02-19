@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useState, useEffect } from "react";
 
 export default function Location() {
@@ -20,10 +21,12 @@ export default function Location() {
 
   return (
     <>
-      <img
+      <Image
         className="absolute inset-0 opacity-10 group-hover:scale-110 transition-transform duration-700"
         alt="Map of SoCal"
         src="/images/map.png"
+        height={180}
+        width={270}
       />
 
       <div className="flex flex-col justify-between h-full w-full">

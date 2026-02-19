@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { motion } from "motion/react";
 import Icon from "./Icon";
 import React from "react";
@@ -72,10 +73,12 @@ function Project({
         PROJECT
       </div>
 
-      <img
+      <Image
         className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700"
         alt={`${title} Card`}
         src={imagePath}
+        height={380}
+        width={560}
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent z-10" />
 

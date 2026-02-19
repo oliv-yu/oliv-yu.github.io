@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { motion } from "motion/react";
 
 export default function Listening() {
@@ -20,10 +21,12 @@ export default function Listening() {
       {/* Main Content: Simulated Activity Player */}
       <div className="flex items-center gap-4 py-2 z-10">
         <div className="relative w-16 h-16 shrink-0">
-          <img
+          <Image
             src="/images/currently_reading.png"
             alt="Currently Reading"
             className="rounded-xl object-cover border border-white/10 group-hover:rotate-3 transition-transform"
+            height={64}
+            width={64}
           />
           <div className="absolute -bottom-1 -right-1 bg-green-500 w-4 h-4 rounded-full border-2 border-[#090909] flex items-center justify-center">
             <div className="w-1.5 h-1.5 bg-white rounded-full animate-ping" />
