@@ -26,7 +26,7 @@ export default function Location() {
         alt="Map of SoCal"
         src="/images/map.png"
         height={180}
-        width={270}
+        width={350}
       />
 
       <div className="flex flex-col justify-between h-full w-full">

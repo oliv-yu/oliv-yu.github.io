@@ -134,7 +134,7 @@ export default function Page() {
             <JumpGame />
           </div>
 
-          <div className="md:col-span-4 md:row-span-2" />
+          <div className="md:col-span-4 md:row-span-1" />
 
           <footer className="md:col-span-4 md:row-span-2 py-24 flex flex-col items-center justify-center border-t border-white/5">
             <p className="text-blue-400 font-mono text-xs uppercase tracking-[0.3em] mb-8">
