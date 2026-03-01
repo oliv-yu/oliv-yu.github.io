@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 import DecorativeAura from "./DecorativeAura";
 import History from "./History";
-import Hobbies from "./Hobbies";
+import Interests from "./Interests";
 import JumpGame from "./JumpGame";
 import Listening from "./Listening";
 import Location from "./Location";
@@ -11,7 +11,7 @@ import SocialLinks from "./SocialLinks";
 import SpotlightLab from "./SpotlightLab";
 import Skills from "./Skills";
 
-export default function Page() {
+export default function Home() {
   return (
     <>
       <DecorativeAura />
@@ -112,7 +112,7 @@ export default function Page() {
             whileHover={{ scale: 1.03 }}
             className="col-span-1 md:col-span-3 md:row-span-1 bg-[#111] border border-white/5 rounded-[2.5rem] md:rounded-[3rem] p-8 flex flex-col justify-between overflow-hidden relative group"
           >
-            <Hobbies />
+            <Interests />
           </motion.div>
 
           <div className="col-span-1 md:col-span-4 py-8 flex items-center gap-4">

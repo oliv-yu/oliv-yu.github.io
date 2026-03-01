@@ -1,11 +1,11 @@
-const HOBBIES = [
-  { label: "Learning Illustration", icon: "🎨" },
+const INTERESTS = [
   { label: "Whisking Matcha", icon: "🍵" },
   { label: "Petting Cats", icon: "🐱" },
+  { label: "Crocheting Amigurumi", icon: "🧶" },
   { label: "Traveling to New Cities", icon: "✈️" },
 ];
 
-export default function Hobbies() {
+export default function Interests() {
   return (
     <>
       <div className="flex justify-between items-start">
@@ -15,14 +15,14 @@ export default function Hobbies() {
       </div>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mt-3">
-        {HOBBIES.map((hobby) => (
+        {INTERESTS.map((interest) => (
           <div
-            key={hobby.label}
+            key={interest.label}
             className="flex items-center gap-2 bg-white/5 rounded-xl p-2 border border-white/5 hover:bg-white/10 transition-colors"
           >
-            <span className="text-xs">{hobby.icon}</span>
+            <span className="text-xs">{interest.icon}</span>
             <span className="text-xs font-medium text-neutral-400 uppercase tracking-tighter">
-              {hobby.label}
+              {interest.label}
             </span>
           </div>
         ))}

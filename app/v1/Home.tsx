@@ -9,7 +9,7 @@ import SocialLinks from "./SocialLinks";
 import * as motion from "motion/react-client";
 import { CircleLoader } from "./LoaderIcon";
 
-export default function Page() {
+export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
 
   setTimeout(() => {
@@ -17,13 +17,13 @@ export default function Page() {
   }, 2250);
 
   return (
-    <>
+    <div className="bg-zinc-900">
       {isLoading ? (
         <div className="grid h-screen place-content-center">
           <CircleLoader />
         </div>
       ) : (
-        <div className="bg-zinc-900 text-default-100 mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-16 lg:py-0">
+        <div className="text-default-100 mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-16 lg:py-0">
           <div className="lg:flex lg:justify-between lg:gap-4">
             <header className="tracking-wider lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[33%] lg:flex-col lg:justify-between lg:py-24">
               <div>
@@ -116,6 +116,6 @@ export default function Page() {
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 }

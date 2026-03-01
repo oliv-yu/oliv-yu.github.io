@@ -1,9 +1,8 @@
 "use client";
 
-import React from "react";
-import StartingPage from "./second/Page";
 // import "./globals.css";
+import Home from "./v2/Home"
 
 export default function Page() {
-  return <StartingPage />;
+  return <Home />;
 }
